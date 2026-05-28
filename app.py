@@ -279,12 +279,12 @@ elif opcion == 'Test de Thomas-Kilmann':
                     cursor = conn.cursor()
 
                     cursor.execute('''
-                        INSERT INTO resultados (Fecha, Semestre, Nombre, Duro, Colaborador, Regateador, Evasivo, Blando)
+                        INSERT INTO resultados ("Fecha", "Semestre", "Nombre", "Duro", "Colaborador", "Regateador", "Evasivo", "Blando")
                         VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
                     ''', (
                         datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                         semestre_actual,
-                        nombre, # Ya no necesitas .replace aquí, psycopg2 maneja las comillas automáticamente
+                        nombre, 
                         puntos['Duro'],
                         puntos['Colaborador'],
                         puntos['Regateador'],
