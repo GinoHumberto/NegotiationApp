@@ -14,7 +14,7 @@ def get_db_connection():
         database=st.secrets["DB_NAME"],
         user=st.secrets["DB_USER"],
         password=st.secrets["DB_PASSWORD"],
-        port=5432
+        port=6543 
     )
     return conn
 
