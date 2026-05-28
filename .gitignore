@@ -1,0 +1,21 @@
+# --- Archivos de configuración y secretos ---
+.streamlit/secrets.toml
+
+# --- Entornos virtuales ---
+.venv/
+venv/
+env/
+
+# --- Archivos de sistema ---
+.DS_Store
+__pycache__/
+*.pyc
+
+# --- Bases de datos locales ---
+*.db
+*.sqlite
+*.sqlite3
+*.csv
+
+# --- Logs y archivos temporales ---
+*.log
