@@ -14,7 +14,7 @@ def get_db_connection():
         database=st.secrets["DB_NAME"],
         user=st.secrets["DB_USER"],
         password=st.secrets["DB_PASSWORD"],
-        port=6543 
+        port=6543
     )
     return conn
 
@@ -201,7 +201,7 @@ elif opcion == 'Test de Thomas-Kilmann':
         st.divider()
 
         # EN CASO DE QUERER USARLO EN EL SEGUNDO CUATRIMESTRE, CAMBIAR ESTA LINEA.
-        semestre_actual = '2026-1C' 
+        semestre_actual = '2026-2C' 
 
         nombre = st.text_input('Coloca tu nombre')
 
